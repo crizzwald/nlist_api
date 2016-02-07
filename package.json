@@ -1,0 +1,26 @@
+{
+  "engine": {
+    "node": "5.5.0"
+  },
+  "name": "nlist_api",
+  "version": "1.0.0",
+  "description": "node listing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "make tests"
+  },
+  "author": "Todd Crown <toddcrown@icloud.com> (http://www.crizzwald.com)",
+  "license": "MIT",
+  "dependencies": {
+    "bedwetter": "1.8.2",
+    "blipp": "2.3.0",
+    "dogwater": "1.1.0",
+    "hapi": "13.0.0",
+    "sails-postgresql": "0.11.2",
+    "shortid": "2.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crizzwald/repository.git"
+  }
+}
