@@ -1,29 +1,21 @@
 var shortid = require('shortid')
 
 module.exports = {
-  identity: 'post',
+  identity: 'posts',
   connection: 'postgresDB',
   attributes: {
-    id: {
-      type: 'string',
-      primaryKey: true,
-      unique: true,
-      defaultsTo: function() {
-        return shortid.generate();
-      }
-    },
     title: {
       type: 'string',
       required: true
     },
-    location: {
-      model: 'location'
-      required: true
-    },
+    // location: {
+    //   model: 'location',
+    //   required: true
+    // },
     price: {
       type: 'float',
       required: true
-    }
+    },
     description: {
       type: 'text',
       required: true
@@ -41,10 +33,10 @@ module.exports = {
       defaultsTo: false
     },
     shippingPrice: {
-      type: float
-    }
-    postType: {
-      model: 'postType'
-    }
+      type: 'float'
+    }//,
+    //postType: {
+      //model: 'postType'
+    //}
   }
-}
+};
